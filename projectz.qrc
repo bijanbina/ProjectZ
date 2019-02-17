@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main_ui.qml</file>
+        <file>fonts/fa-brands-400.ttf</file>
+        <file>fonts/fa-light-300.ttf</file>
+        <file>fonts/fasolid.ttf</file>
+        <file>fonts/GiddyupStd.otf</file>
+        <file>fonts/OpenSans-Regular.ttf</file>
+        <file>KeyCell.qml</file>
+        <file>KeyRow1.qml</file>
+        <file>KeyRow2.qml</file>
+        <file>KeyRow3.qml</file>
+        <file>KeyRow4.qml</file>
+        <file>KeyRow5.qml</file>
+        <file>KeyRow6.qml</file>
+        <file>KeyRow7.qml</file>
+        <file>KeyRow8.qml</file>
+        <file>KeyRow9.qml</file>
+        <file>KeyRow10.qml</file>
+        <file>KeyStatus.qml</file>
+        <file>VolumeSlider.qml</file>
+        <file>fonts/fa-regular-400.ttf</file>
+    </qresource>
+</RCC>
