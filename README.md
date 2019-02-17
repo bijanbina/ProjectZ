@@ -9,4 +9,4 @@ This project is in alpha stage and only works on specific Ip address on Andoid/L
 
 
 # Screenshot 
-![alt text](https://raw.githubusercontent.com/bijanbina/ProjectZ/master/res/ProjectZ.png)
+![alt text](https://raw.githubusercontent.com/bijanbina/ProjectZ/master/res/Screenshot.png)
