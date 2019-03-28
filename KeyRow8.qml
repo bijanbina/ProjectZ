@@ -33,7 +33,7 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_sheen"
+        fa_value: "05d4"
         fa_label: "ش"
         fa_enable: fa_en
     }
@@ -48,7 +48,7 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_seen"
+        fa_value: "05d3"
         fa_label: "س"
         fa_enable: fa_en
     }
@@ -63,7 +63,7 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_yeh"
+        fa_value: "10006"
         fa_label: "ی"
         fa_enable: fa_en
     }
@@ -78,7 +78,7 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_beh"
+        fa_value: "05c8"
         fa_label: "ب"
         fa_enable: fa_en
     }
@@ -93,7 +93,7 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_lam"
+        fa_value: "05e4"
         fa_label: "ل"
         fa_enable: fa_en
     }
@@ -108,7 +108,7 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_alef"
+        fa_value: "05c7"
         fa_label: "ا"
         fa_enable: fa_en
     }
@@ -123,7 +123,7 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_teh"
+        fa_value: "05ca"
         fa_label: "ت"
         fa_enable: fa_en
     }
@@ -138,7 +138,7 @@ RowLayout
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
         font_coeff: default_coeff
-        fa_value: "Arabic_noon"
+        fa_value: "05e6"
         fa_label: "ن"
         fa_enable: fa_en
     }
@@ -153,44 +153,44 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_meem"
+        fa_value: "05e5"
         fa_label: "م"
         fa_enable: fa_en
     }
     KeyCell
     {
-        value: "semicolon"
+        value: "003b"
         label: ";"
-        alt_value: "colon"
+        alt_value: "003b"
         alt_label: ":"
         alt_status: shift_hold || caps_hold
         theme_dark: darkEnbl
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_keheh"
+        fa_value: "10006a9"
         fa_label: "ک"
         fa_enable: fa_en
     }
     KeyCell
     {
-        value: "apostrophe"
+        value: "0027"
         label: "'"
-        alt_value: "quotedbl"
+        alt_value: "0022"
         alt_label: "\""
         alt_status: shift_hold || caps_hold
         theme_dark: darkEnbl
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_gaf"
+        fa_value: "10006af"
         fa_label: "گ"
         fa_enable: fa_en
     }
     KeyCell
     {
-        width: 117 * scale_factor
-        value: "Return"
+        width: 77 * scale_factor
+        value: "ff0d"
         label: "Enter"
         theme_dark: darkEnbl
         onKeyPressed: rowPressed(key_val)
@@ -198,12 +198,22 @@ RowLayout
     }
     KeyCell
     {
-        width: 60 * scale_factor
-        value: "Copy"
-        label: "\uf0c5"
+        value: "CEnter"
+        label: "CE"
         theme_dark: darkEnbl
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_solid: true
+        side_margin: -10
+        width: 25 * scale_factor
+    }
+    KeyCell
+    {
+        value: "ScrollDown"
+        label: "\uf103"
+        theme_dark: darkEnbl
+        onKeyPressed: rowPressed(key_val)
+        onKeyReleased: rowReleased(key_val)
+        width: 80 * scale_factor
+        side_margin: 20
     }
 }

@@ -13,10 +13,23 @@ RowLayout
     spacing: 4 * scale_factor
     KeyCell
     {
-        value: "Shift"
+        value: "Language"
+        label: "En"
+        fa_value: "Language"
+        fa_label: "Fa"
+        fa_enable: fa_en
+        theme_dark: darkEnbl
+        onKeyPressed: rowPressed(key_val)
+        onKeyReleased: rowReleased(key_val)
+        side_margin: -10
+        width: 25 * scale_factor
+    }
+    KeyCell
+    {
+        value: "ffe1"
         label: "\uf151"
         theme_dark: darkEnbl
-        width: 120 * scale_factor
+        width: 80 * scale_factor
         font_coeff: default_coeff
         shift_status: shift_hold
         onKeyPressed: rowPressed(key_val)
@@ -34,7 +47,7 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_zah"
+        fa_value: "05d8"
         fa_label: "ظ"
         fa_enable: fa_en
     }
@@ -49,7 +62,7 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_tah"
+        fa_value: "05d7"
         fa_label: "ط"
         fa_enable: fa_en
     }
@@ -64,7 +77,7 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_zain"
+        fa_value: "05d2"
         fa_label: "ز"
         fa_enable: fa_en
     }
@@ -79,7 +92,7 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_ra"
+        fa_value: "05d1"
         fa_label: "ر"
         fa_enable: fa_en
     }
@@ -94,7 +107,7 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_thal"
+        fa_value: "05d0"
         fa_label: "ذ"
         fa_enable: fa_en
     }
@@ -109,7 +122,7 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_dal"
+        fa_value: "05cf"
         fa_label: "د"
         fa_enable: fa_en
     }
@@ -124,30 +137,30 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_peh"
+        fa_value: "100067e"
         fa_label: "پ"
         fa_enable: fa_en
     }
     KeyCell
     {
-        value: "comma"
+        value: "002c"
         label: ","
-        alt_value: "less"
+        alt_value: "003c"
         alt_label: "<"
         alt_status: shift_hold || caps_hold
         theme_dark: darkEnbl
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_waw"
+        fa_value: "05e8"
         fa_label: "و"
         fa_enable: fa_en
     }
     KeyCell
     {
-        value: "period"
+        value: "002e"
         label: "."
-        alt_value: "greater"
+        alt_value: "003e"
         alt_label: ">"
         alt_status: shift_hold || caps_hold
         theme_dark: darkEnbl
@@ -157,9 +170,9 @@ RowLayout
     }
     KeyCell
     {
-        value: "slash"
+        value: "002f"
         label: "/"
-        alt_value: "question"
+        alt_value: "003f"
         alt_label: "?"
         alt_status: shift_hold || caps_hold
         theme_dark: darkEnbl
@@ -170,18 +183,19 @@ RowLayout
     KeyCell
     {
         width: 82 * scale_factor
-        value: "Shift"
+        value: "ffe2"
         label: "\uf151"
         theme_dark: darkEnbl
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
         fa_solid: true
+        shift_status: shift_hold
     }
     KeyCell
     {
         width: 60 * scale_factor
-        value: "Up"
+        value: "ff52"
         label: "\uf062"
         theme_dark: darkEnbl
         onKeyPressed: rowPressed(key_val)

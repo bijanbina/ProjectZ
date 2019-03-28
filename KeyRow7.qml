@@ -13,8 +13,11 @@ RowLayout
     spacing: 4 * scale_factor
     KeyCell
     {
-        value: "Tab"
+        value: "ff09"
         label: "Tab"
+        alt_value: "Shift+Tab"
+        alt_label: "STab"
+        alt_status: shift_hold
         theme_dark: darkEnbl
         width: 80 * scale_factor
         onKeyPressed: rowPressed(key_val)
@@ -22,7 +25,7 @@ RowLayout
     }
     KeyCell
     {
-        value: "q"
+        value: "0071"
         label: "q"
         alt_value: "Q"
         alt_label: "Q"
@@ -31,13 +34,13 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_dad"
+        fa_value: "05d6"
         fa_label: "ض"
         fa_enable: fa_en
     }
     KeyCell
     {
-        value: "w"
+        value: "0077"
         label: "w"
         alt_value: "W"
         alt_label: "W"
@@ -46,13 +49,13 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_sad"
+        fa_value: "05d5"
         fa_label: "ص"
         fa_enable: fa_en
     }
     KeyCell
     {
-        value: "e"
+        value: "0065"
         label: "e"
         alt_value: "E"
         alt_label: "E"
@@ -61,13 +64,13 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_theh"
+        fa_value: "05cb"
         fa_label: "ث"
         fa_enable: fa_en
     }
     KeyCell
     {
-        value: "r"
+        value: "72"
         label: "r"
         alt_value: "R"
         alt_label: "R"
@@ -76,13 +79,13 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_qaf"
+        fa_value: "05e2"
         fa_label: "ق"
         fa_enable: fa_en
     }
     KeyCell
     {
-        value: "t"
+        value: "74"
         label: "t"
         alt_value: "T"
         alt_label: "T"
@@ -91,7 +94,7 @@ RowLayout
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
         font_coeff: default_coeff
-        fa_value: "Arabic_feh"
+        fa_value: "05e1"
         fa_label: "ف"
         fa_enable: fa_en
     }
@@ -106,7 +109,7 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_ghain"
+        fa_value: "05da"
         fa_label: "غ"
         fa_enable: fa_en
     }
@@ -121,7 +124,7 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_ain"
+        fa_value: "05d9"
         fa_label: "ع"
         fa_enable: fa_en
     }
@@ -136,7 +139,7 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_ha"
+        fa_value: "05e7"
         fa_label: "ه"
         fa_enable: fa_en
     }
@@ -151,7 +154,7 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_khah"
+        fa_value: "05ce"
         fa_label: "خ"
         fa_enable: fa_en
     }
@@ -166,15 +169,15 @@ RowLayout
         font_coeff: default_coeff
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_value: "Arabic_hah"
+        fa_value: "05cd"
         fa_label: "ح"
         fa_enable: fa_en
     }
     KeyCell
     {
-        value: "bracketleft"
+        value: "005b"
         label: "["
-        alt_value: "braceleft"
+        alt_value: "007b"
         alt_label: "{"
         alt_status: shift_hold || caps_hold
         onKeyPressed: rowPressed(key_val)
@@ -189,15 +192,15 @@ RowLayout
                     }
 
         theme_dark: darkEnbl
-        fa_value: "Arabic_jeem"
+        fa_value: "05cc"
         fa_label: "ج"
         fa_enable: fa_en
     }
     KeyCell
     {
-        value: "bracketright"
+        value: "005d"
         label: "]"
-        alt_value: "braceright"
+        alt_value: "007d"
         alt_label: "}"
         alt_status: shift_hold || caps_hold
         onKeyPressed: rowPressed(key_val)
@@ -211,30 +214,32 @@ RowLayout
                     {
                         0.4
                     }
-        fa_value: "Arabic_tcheh"
+        fa_value: "1000686"
         fa_label: "چ"
         fa_enable: fa_en
     }
     KeyCell
     {
         width: 88 * scale_factor
-        value: "backslash"
+        value: "005c"
         label: "\\"
-        alt_value: "bar"
+        alt_value: "007c"
         alt_label: "|"
         alt_status: shift_hold || caps_hold
         theme_dark: darkEnbl
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
+        fa_value: "1000698"
+        fa_label: "ژ"
+        fa_enable: fa_en
     }
     KeyCell
     {
-        width: 60 * scale_factor
-        value: "Cut"
-        label: "\uf0c4"
+        value: "ScrollUp"
+        label: "\uf102"
         theme_dark: darkEnbl
+        width: 60 * scale_factor
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
-        fa_solid: true
     }
 }

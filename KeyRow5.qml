@@ -4,6 +4,7 @@ import QtQuick.Layouts 1.0
 RowLayout
 {
     property double default_coeff: 0.5;
+    property bool scroll_status: false;
     signal rowPressed(string key_value)
     signal rowReleased(string key_value)
     property bool fa_en: false;
@@ -11,18 +12,33 @@ RowLayout
     spacing: 4 * scale_factor
     KeyCell
     {
-        value: "asciitilde"
-        label: "~"
-        theme_dark: darkEnbl
-        onKeyPressed: rowPressed(key_val)
-        onKeyReleased: rowReleased(key_val)
+        value: if(scroll_en)
+               {
+                   "ScrollUp"
+               }
+               else
+               {
+                   "007e"
+               }
+        label: if(scroll_en)
+               {
+                   "\uf102"
+               }
+               else
+               {
+                   "~"
+               }
         fa_value: "division"
         fa_label: "÷"
-        fa_enable: fa_en
+        fa_enable: fa_en && !(scroll_en)
+        theme_dark: darkEnbl
+        font_coeff: 0.45
+        onKeyPressed: rowPressed(key_val)
+        onKeyReleased: rowReleased(key_val)
     }
     KeyCell
     {
-        value: "exclam"
+        value: "0021"
         label: "!"
         theme_dark: darkEnbl
         onKeyPressed: rowPressed(key_val)
@@ -30,7 +46,7 @@ RowLayout
     }
     KeyCell
     {
-        value: "at"
+        value: "0040"
         label: "@"
         theme_dark: darkEnbl
         onKeyPressed: rowPressed(key_val)
@@ -41,7 +57,7 @@ RowLayout
     }
     KeyCell
     {
-        value: "numbersign"
+        value: "0023"
         label: "#"
         theme_dark: darkEnbl
         onKeyPressed: rowPressed(key_val)
@@ -52,7 +68,7 @@ RowLayout
     }
     KeyCell
     {
-        value: "dollar"
+        value: "0024"
         label: "$"
         theme_dark: darkEnbl
         onKeyPressed: rowPressed(key_val)
@@ -63,7 +79,7 @@ RowLayout
     }
     KeyCell
     {
-        value: "percent"
+        value: "0025"
         label: "%"
         theme_dark: darkEnbl
         onKeyPressed: rowPressed(key_val)
@@ -74,7 +90,7 @@ RowLayout
     }
     KeyCell
     {
-        value: "asciicircum"
+        value: "005e"
         label: "^"
         theme_dark: darkEnbl
         onKeyPressed: rowPressed(key_val)
@@ -85,7 +101,7 @@ RowLayout
     }
     KeyCell
     {
-        value: "ampersand"
+        value: "0026"
         label: "&"
         theme_dark: darkEnbl
         onKeyPressed: rowPressed(key_val)
@@ -96,7 +112,7 @@ RowLayout
     }
     KeyCell
     {
-        value: "asterisk"
+        value: "002a"
         label: "*"
         theme_dark: darkEnbl
         onKeyPressed: rowPressed(key_val)
@@ -104,23 +120,29 @@ RowLayout
     }
     KeyCell
     {
-        value: "parenleft"
+        value: "0028"
         label: "("
         theme_dark: darkEnbl
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
+        fa_value: "0029"
+        fa_label: "("
+        fa_enable: fa_en
     }
     KeyCell
     {
-        value: "parenright"
+        value: "0029"
         label: ")"
         theme_dark: darkEnbl
         onKeyPressed: rowPressed(key_val)
         onKeyReleased: rowReleased(key_val)
+        fa_value: "0028"
+        fa_label: ")"
+        fa_enable: fa_en
     }
     KeyCell
     {
-        value: "underscore"
+        value: "005f"
         label: "_"
         theme_dark: darkEnbl
         onKeyPressed: rowPressed(key_val)
@@ -128,7 +150,7 @@ RowLayout
     }
     KeyCell
     {
-        value: "plus"
+        value: "002b"
         label: "+"
         theme_dark: darkEnbl
         onKeyPressed: rowPressed(key_val)
@@ -137,7 +159,7 @@ RowLayout
     KeyCell
     {
         width: 60 * scale_factor
-        value: "Print"
+        value: "fd1d"
         label: "Prt Sc\nSys Rq"
         font_coeff: 0.28
         theme_dark: darkEnbl
@@ -148,21 +170,26 @@ RowLayout
     KeyCell
     {
         width: 57 * scale_factor
-        value: "Scroll_Lock"
+        value: "ff14"
         label: "Scroll\nLock"
         font_coeff: 0.3
         font_family: openSans.name
         font_weight: Font.Normal
+        theme_dark: darkEnbl
         txt_lineHeight: 0.85
         side_margin: 3
-        onKeyPressed: rowPressed(key_val)
+        onKeyPressed: {
+                        rowPressed(key_val);
+                        scroll_status = !scroll_status
+                      }
         onKeyReleased: rowReleased(key_val)
         txt_yoffset: -2
+        shift_status: scroll_status
     }
     KeyCell
     {
         width: 64 * scale_factor
-        value: "Pause"
+        value: "ff13"
         label: "Pause\nBreak"
         font_coeff: 0.3
         font_family: openSans.name

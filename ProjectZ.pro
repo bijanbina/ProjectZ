@@ -1,6 +1,7 @@
 TEMPLATE = app
 QT += network
 QT += quick
+QT += testlib
 android: QT += androidextras
 
 TARGET = ProjectZ
@@ -37,7 +38,8 @@ DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.properties \
     android/gradlew.bat \
     android/res/xml/device_admin_sample.xml \
-    android/res/values/strings.xml
+    android/res/values/strings.xml \
+    ScrollCell.qml
 
 RESOURCES += \
     projectz.qrc

@@ -27,7 +27,6 @@ Item {
     property bool fa_solid: false
     property bool fa_enable: false
     property bool is_pressed: false
-    property color fg_dark: "#ddd"
 
     signal keyPressed(string key_val)
     signal keyReleased(string key_val)
@@ -170,7 +169,7 @@ Item {
 
             color: if (theme_dark)
                    {
-                       fg_dark
+                       "#ddd"
                    }
                    else
                    {
